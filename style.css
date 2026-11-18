@@ -1,0 +1,267 @@
+/* Tipografia Base */
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: #1A1F36;
+  scroll-behavior: smooth;
+}
+
+.font-heading {
+  font-family: 'Sora', sans-serif;
+}
+
+/* Barra de Acessibilidade */
+.acc-btn {
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.acc-btn:hover {
+  background: rgba(0, 212, 170, 0.2);
+  border-color: #00D4AA;
+}
+
+/* Modo Alto Contraste */
+body.high-contrast {
+  filter: contrast(1.25);
+}
+
+body.high-contrast #app-wrapper,
+body.high-contrast #hero,
+body.high-contrast #recursos {
+  background: #000000 !important;
+  color: #FFFFFF !important;
+}
+
+body.high-contrast h1,
+body.high-contrast h2,
+body.high-contrast h3,
+body.high-contrast p,
+body.high-contrast a {
+  color: #FFFF00 !important;
+}
+
+body.high-contrast .feature-card {
+  background: #111111 !important;
+  border: 1px solid #FFFF00 !important;
+}
+
+/* Navbar e Menu Mobile */
+#navbar {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(11, 20, 55, 0.06);
+}
+
+#navbar.scrolled {
+  top: 0;
+  box-shadow: 0 10px 30px rgba(11, 20, 55, 0.08);
+}
+
+.mobile-menu {
+  display: none;
+  background: rgba(255, 255, 255, 0.98);
+}
+
+.mobile-menu.open {
+  display: block;
+}
+
+/* Botões */
+.btn-cta {
+  background: linear-gradient(135deg, #00D4AA, #00B894);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 212, 170, 0.35);
+}
+
+.btn-secondary {
+  border: 1.5px solid rgba(11, 20, 55, 0.12);
+  transition: border-color 0.2s ease;
+}
+
+.btn-secondary:hover {
+  border-color: #00D4AA;
+}
+
+/* Hero Glows & Mockup 3D */
+.hero-glow-1 {
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  width: 24rem;
+  height: 24rem;
+  border-radius: 9999px;
+  opacity: 0.3;
+  background: radial-gradient(circle, rgba(0, 212, 170, 0.12), transparent 70%);
+  filter: blur(60px);
+}
+
+.hero-glow-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 9999px;
+  opacity: 0.2;
+  background: radial-gradient(circle, rgba(11, 20, 55, 0.08), transparent 70%);
+  filter: blur(50px);
+}
+
+.phone-glow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16rem;
+  height: 4rem;
+  border-radius: 9999px;
+  background: radial-gradient(ellipse, rgba(0, 212, 170, 0.3), transparent 70%);
+  filter: blur(20px);
+  animation: pulse-ring 3s ease-in-out infinite;
+}
+
+.phone-mockup {
+  position: absolute;
+  left: 50%;
+  top: 2rem;
+  width: 200px;
+  height: 370px;
+  background: linear-gradient(160deg, #111C44, #0B1437);
+  border-radius: 28px;
+  box-shadow: 0 30px 80px rgba(11, 20, 55, 0.4), 0 0 0 3px rgba(255, 255, 255, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.phone-screen {
+  margin: 0.75rem 0.75rem 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  height: 340px;
+  background: linear-gradient(180deg, #1B254B, #0f1a3a);
+}
+
+.mini-credit-card {
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 110px;
+  height: 68px;
+  background: linear-gradient(135deg, #0B1437, #1B254B);
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Recursos e Dashboard */
+.section-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(11, 20, 55, 0.06), transparent);
+}
+
+.feature-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(11, 20, 55, 0.06);
+}
+
+.feature-icon-box {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, rgba(0, 212, 170, 0.12), rgba(0, 212, 170, 0.04));
+}
+
+.geo-pattern {
+  background-image: radial-gradient(rgba(0, 212, 170, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.dash-card {
+  background: linear-gradient(160deg, #111C44, #1B254B);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.dash-stat-box {
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.mini-bar {
+  background: linear-gradient(180deg, #00D4AA, rgba(0, 212, 170, 0.4));
+  transition: height 0.4s ease;
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.4);
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #00D4AA;
+}
+
+/* Keyframes e Animações */
+@keyframes pulse-ring {
+  0%, 100% { opacity: 0.5; transform: translateX(-50%) scale(0.95); }
+  50% { opacity: 0.9; transform: translateX(-50%) scale(1.05); }
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translate(-50%, 0px); }
+  50% { transform: translate(-50%, -10px); }
+}
+
+@keyframes floatCard {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.phone-mockup.float-slow {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+.float-med,
+div > .float-slow {
+  animation: floatCard 3.5s ease-in-out infinite;
+}
+
+.anim-fade-up { animation: fadeUp 0.6s ease forwards; }
+.anim-fade-up-d1 { animation: fadeUp 0.6s ease 0.1s forwards; opacity: 0; }
+.anim-fade-up-d2 { animation: fadeUp 0.6s ease 0.2s forwards; opacity: 0; }
+.anim-fade-up-d3 { animation: fadeUp 0.6s ease 0.3s forwards; opacity: 0; }
+.anim-fade-up-d4 { animation: fadeUp 0.6s ease 0.4s forwards; opacity: 0; }
+
+/* Scroll Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
